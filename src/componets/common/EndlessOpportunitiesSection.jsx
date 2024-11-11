@@ -67,7 +67,7 @@ const EndlessOpportunitiesSection = () => {
           </div>
         </div>
       </section>
-      <section className="pt-7 pb-[5rem] bg-black overflow-hidden">
+      <section className="pt-7 pb-[5rem] bg-main overflow-hidden">
         <div className="wrapper">
           <div className="flex flex-col gap-5 mt-5">
             <div

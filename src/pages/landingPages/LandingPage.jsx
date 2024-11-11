@@ -35,15 +35,15 @@ export const LandingPage = ({ page }) => {
           className="pt-[3rem] wrapper flex items-center h-full"
         >
           <div className="relative z-10 px-6 justify-center h-full flex flex-col items-center gap-5 text-center md:max-w-[60rem] mx-auto">
-            <div className="rounded-text-box border-white/70 font-medium text-white">
+            <div className="rounded-text-box border-black font-medium text-black">
               {isWebDevelopment ? "Web Development" : "App Development"}
             </div>
-            <h1 className="heading-1 text-white">
+            <h1 className="heading-1 text-black">
               {isWebDevelopment
-                ? "Creating Websites that Grow with Your Business"
-                : "Your Ideas, Perfectly Engineered into Apps"}
+                ? "Building Websites for Lasting Growth"
+                : "Your Vision, Skillfully Shaped into Apps"}
             </h1>
-            <p className="text-white/90 desc">
+            <p className="text-black font-semibold desc">
               We specialize in delivering cutting-edge IT solutions tailored to
               meet the unique needs of modern businesses.
             </p>
@@ -59,7 +59,7 @@ export const LandingPage = ({ page }) => {
         </div>
       </div>
 
-      <section id="about" className="py-[5rem] bg-black text-white wrapper">
+      <section id="about" className="py-[5rem] bg-main text-white wrapper">
         <div
           data-aos="fade-up"
           className="gradient-rounded-text-box mx-auto lg:mx-0"
@@ -74,13 +74,13 @@ export const LandingPage = ({ page }) => {
             <div className="flex flex-col gap-7">
               <h2 className="heading-2">
                 {isWebDevelopment
-                  ? "Innovative Web Development Solutions for Modern Brands"
-                  : "Building Apps that Elevate Your Business with Our App Development Services."}
+                  ? "Bringing Your Ideas to Life Online."
+                  : "Apps That Elevate Your Business to New Heights."}
               </h2>
               <p className="desc">
                 {isWebDevelopment
-                  ? "Our approach to web development combines innovation with technical expertise. We deliver websites that capture your brand’s essence while delivering a seamless experience across all devices, helping you connect with users and drive growth."
-                  : "Whether you’re a startup with a fresh idea or an established enterprise, we provide full-cycle app development services tailored to your unique goals. Our apps are designed to boost engagement, optimize performance, and scale with your business, giving you a competitive edge."}
+                  ? "A website is more than a digital address; it’s the core of your online presence. Our development team specializes in transforming ideas into fully functional, high-performing websites. From e-commerce platforms to corporate sites and tailored web applications, we create websites that are fast, secure, and built to grow with your business. Every solution is user-friendly and optimized for maximum performance."
+                  : "From startups with bold ideas to established enterprises, we offer end-to-end app development services tailored to your specific goals. Our apps are crafted to enhance engagement, maximize performance, and grow alongside your business, delivering a competitive advantage."}
               </p>
             </div>
             <div className="flex justify-center lg:justify-start gap-5 mt-4">
@@ -115,7 +115,7 @@ export const LandingPage = ({ page }) => {
       <LandingServices page={page} />
       <WhyChooseUs />
 
-      <section className="pt-[10rem] pb-[5rem] bg-black text-white">
+      <section className="pt-[10rem] pb-[5rem] bg-main text-white">
         <div className="wrapper text-center flex flex-col gap-3">
           <div
             data-aos="fade-up"
@@ -125,26 +125,19 @@ export const LandingPage = ({ page }) => {
           </div>
           <h1
             data-aos="fade-up"
-            className="heading-1 bg-gradient-to-r from-[#7186FF_40%] md:min-h-[5rem] to-[#A502A8_50%] bg-clip-text text-transparent"
+            className="heading-1  md:min-h-[5rem] text-white bg-clip-text text-transparent"
           >
             Design & Revolution
           </h1>
           <p data-aos="fade-up" className="desc max-w-[50rem] mx-auto">
-            At VKM Techno Solutions, we understand that in today’s digital-first
-            world, your website is more than just an online presence—it’s the
-            heart of your brand’s identity, a vital business tool, and often the
-            first touchpoint for potential customers. In an era where first
-            impressions matter more than ever, having a well-designed, fast, and
-            responsive website is crucial to your business success. That’s why
-            our website development services go beyond the basics—we aim to
-            deliver not just a website, but a complete digital experience that
-            drives engagement, boosts conversions, and empowers your business to
-            grow.
+            {isWebDevelopment
+              ? "At Elevanco, we recognize that in today's digital landscape, your            website is far more than a mere online presence—it's the core of            your brand, a powerful business asset, and often the first            interaction for potential clients. With first impressions holding            more weight than ever, a well-crafted, high-performing, and            responsive website is essential to business success. Our website            development services go beyond simply creating a site; we build a            comprehensive digital experience that fosters engagement, drives          conversions, and equips your business for sustained growth."
+              : "At Elevanco, we know that in today’s competitive market, an app is more than just a product—it’s a strategic asset and an extension of your brand. Whether you're enhancing customer engagement or optimizing operations, a well-crafted, high-performance app is essential for success. Our app development services focus on creating a seamless digital experience, combining functionality with intuitive design to increase user satisfaction, support business growth, and provide a foundation for future innovation."}
           </p>
         </div>
       </section>
 
-      <section className="bg-gradient-to-r from-secondary/80 to-primary/80 md:from-secondary/30 md:to-primary/30 overflow-hidden h-[70vh] relative flex items-center">
+      <section className="bg-primary overflow-hidden h-[70vh] relative flex items-center">
         <div className="wrapper">
           <div className="flex justify-center md:justify-normal gap-5">
             <div className="absolute -z-10 md:z-10 md:relative flex gap-5">
