@@ -97,21 +97,18 @@ const Home = () => {
           className="wrapper text-center  flex flex-col gap-3"
         >
           <div className="gradient-rounded-text-box-black mx-auto mb-4 ">
-            Who We Are
+            Our Mission
           </div>
           <h1 className="heading-2  max-w-[50rem] mx-auto bg-clip-text text-black">
-            Empowering Businesses with Technology
+            Driving Growth with Tailored Tech Solutions
           </h1>
           <p className="desc max-w-[50rem] mx-auto">
-            At Elevanco, we empower businesses in tech, finance, and e-commerce
-            with innovative technology solutions that simplify, streamline, and
-            elevate operations. Our mission is to deliver high-performance
-            applications, efficient automation, and user-centered designs that
-            drive growth, optimize processes, and create lasting value for our
-            clients. We strive to be a trusted partner, transforming how
-            businesses operate and connect with their audiences. Our vision is
-            to enable companies of all sizes to achieve more through intuitive
-            technology, seamless automation, and exceptional user experiences.
+            To empower businesses across tech, finance, and e-commerce with
+            innovative technology solutions that simplify, streamline, and
+            elevate their operations. We’re committed to delivering
+            high-performance applications, efficient automation, and
+            user-centered designs that help decision-makers drive growth,
+            optimize processes, and create lasting value for their customers.
           </p>
         </div>
       </section>

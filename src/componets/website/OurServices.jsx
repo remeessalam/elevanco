@@ -56,7 +56,7 @@ const OurServices = ({ length }) => {
           ))}
         </div>
         {length && (
-          <Link to="/services" className="primary-btn mt-6">
+          <Link to="/services" className="primary-btntwo mt-6">
             All Services
           </Link>
         )}

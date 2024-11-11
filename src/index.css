@@ -49,6 +49,9 @@ body {
   .primary-btn {
     @apply text-white cursor-pointer font-light tracking-wide bg-tertiary hover:bg-tertiary/80 text-sm hover:shadow-secondary hover:-translate-y-1 shadow-2xl shadow-transparent rounded-[.3rem] px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300;
   }
+  .primary-btntwo {
+    @apply text-white cursor-pointer font-light tracking-wide border border-white bg-tertiary hover:bg-tertiary/80 text-sm hover:shadow-secondary hover:-translate-y-1 shadow-2xl shadow-transparent rounded-[.3rem] px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300;
+  }
   .secondary-btn {
     @apply text-white cursor-pointer font-light tracking-wide bg-black border border-tertiary hover:bg-tertiary text-sm hover:shadow-white hover:-translate-y-1 shadow-2xl shadow-transparent rounded-[.3rem] px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300;
   }

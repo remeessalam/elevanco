@@ -8,16 +8,16 @@ const UnlockEfficiency = () => {
         data-aos="fade-up"
         className="wrapper flex flex-col text-black items-center gap-5 text-center"
       >
-        <div className="gradient-rounded-text-box-black">
-          Delivering Excellence
-        </div>
+        <div className="gradient-rounded-text-box-black">Our Vision</div>
         <h2 className="heading-2">
-          Empower Your Business with Our IT Solutions
+          Empowering Global Businesses Through Innovation
         </h2>
         <p className="desc max-w-[40rem] text-center">
-          Helping businesses excel, innovate, and grow in the dynamic,
-          ever-evolving digital world, ensuring long-term success and
-          competitive advantage.
+          To be a trusted technology partner for companies worldwide,
+          transforming how businesses operate and connect with their audiences.
+          We envision a future where digital solutions drive positive change,
+          enabling companies of all sizes to achieve more through intuitive
+          technology, automation, and elevated user experiences.
         </p>
         <Link to="/contact-us" className="primary-btn mt-3">
           Contact Us
