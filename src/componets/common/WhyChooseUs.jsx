@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
   }, [inView]);
 
   return (
-    <section className="py-[5rem] bg-gradient-to-r from-secondary/30 to-primary/30">
+    <section className="py-[5rem] bg-main">
       <div className="wrapper text-center text-white flex flex-col gap-7">
         <div data-aos="fade-up" className="gradient-rounded-text-box mx-auto">
           Why Choose Us
@@ -170,7 +170,7 @@ const WhyChooseUs = () => {
           <div
             ref={ref}
             data-aos="fade-up"
-            className="w-full grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10 lg:gap-5 rounded-3xl bg-gradient-to-r from-secondary to-primary p-[2rem]"
+            className="w-full grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10 lg:gap-5 rounded-3xl bg-white text-black p-[2rem]"
           >
             <div className="w-full flex flex-col items-center justify-center">
               <div className="flex flex-col gap-3 relative w-fit">

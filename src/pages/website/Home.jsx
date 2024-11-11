@@ -23,7 +23,7 @@ const Home = () => {
           playing
           className="absolute"
         />
-        <div className="bg-gradient-to-r to-black/50 from-transparent absolute w-full h-full"></div>
+        <div className="black absolute w-full h-full"></div>
         <div className="pt-[3rem] wrapper flex items-center h-full">
           <div
             data-aos="fade-up"
@@ -48,10 +48,10 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="py-[5rem] bg-black text-white wrapper">
+      <section className="py-[5rem] bg-main text-white wrapper">
         <div
           data-aos="fade-right"
-          className="gradient-rounded-text-box mx-auto lg:mx-0"
+          className="gradient-rounded-text-box  mx-auto lg:mx-0"
         >
           About Us
         </div>
@@ -91,15 +91,15 @@ const Home = () => {
         </div>
       </section>
       <OurServices length={3} />
-      <section className="py-[5rem] bg-black text-white">
+      <section className="py-[5rem] bg-white text-black">
         <div
           data-aos="fade-up"
-          className="wrapper text-center flex flex-col gap-3"
+          className="wrapper text-center  flex flex-col gap-3"
         >
-          <div className="gradient-rounded-text-box mx-auto mb-4">
+          <div className="gradient-rounded-text-box-black mx-auto mb-4 ">
             Who We Are
           </div>
-          <h1 className="heading-2 bg-gradient-to-r from-[#7186FF] max-w-[50rem] mx-auto to-[#A502A8] bg-clip-text text-transparent">
+          <h1 className="heading-2  max-w-[50rem] mx-auto bg-clip-text text-black">
             Empowering Businesses with Technology
           </h1>
           <p className="desc max-w-[50rem] mx-auto">

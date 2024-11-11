@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 
 const UnlockEfficiency = () => {
   return (
-    <section className="py-[5rem] text-white bg-gradient-to-r from-primary/30 to-secondary/30">
+    <section className="py-[5rem]  bg-white text-black">
       <div
         data-aos="fade-up"
-        className="wrapper flex flex-col text-white items-center gap-5 text-center"
+        className="wrapper flex flex-col text-black items-center gap-5 text-center"
       >
-        <div className="gradient-rounded-text-box">Delivering Excellence</div>
+        <div className="gradient-rounded-text-box-black">
+          Delivering Excellence
+        </div>
         <h2 className="heading-2">
           Empower Your Business with Our IT Solutions
         </h2>

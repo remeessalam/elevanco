@@ -7,6 +7,7 @@ module.exports = {
         // 'primary': '#5B6CFF',
         primary: "#fa4f41",
         secondary: "#f1f1f1",
+        main: "#171717",
         tertiary: "#fa4f41",
       },
       fontFamily: {

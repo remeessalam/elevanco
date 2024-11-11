@@ -14,7 +14,7 @@ import endlessOpportunitiesImg2 from "./assets/images/section-8-img-2.png";
 import endlessOpportunitiesImg3 from "./assets/images/section-8-img-3.png";
 import homeBannerVideo from "./assets/videos/home-banner.mp4";
 import defaultBanner from "./assets/images/banner.jpg";
-import aboutUsBanner from "./assets/images/about-us-banner.jpeg";
+import aboutUsBanner from "./assets/images/about-us-banner.jpg";
 import aboutUsGridImg1 from "./assets/images/aboutus-png1.png";
 import aboutUsGridImg2 from "./assets/images/aboutus-png2.png";
 import aboutUsGridImg3 from "./assets/images/aboutus-png3.png";

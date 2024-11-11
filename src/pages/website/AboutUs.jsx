@@ -21,7 +21,7 @@ const AboutUs = () => {
       >
         <img
           src={aboutUsBanner}
-          className="object-cover object-[100%_35%] h-full w-full"
+          className="object-cover object-[100%_15%] h-full w-full"
           alt=""
         />
       </div>
@@ -161,7 +161,7 @@ const AboutUs = () => {
           </h2>
           <ul className="mt-[2rem] flex flex-col gap-3 list-disc list-outside text-start">
             {whyChooseUsContent.map((item) => (
-              <li data-aos="fade-up" key={item.id} className="text-[#CF00FE]">
+              <li data-aos="fade-up" key={item.id} className="text-primary">
                 <span className="font-raleway font-bold">{item.title}:</span>{" "}
                 <span className="desc text-white ml-1">{item.desc}</span>
               </li>

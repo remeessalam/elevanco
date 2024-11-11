@@ -15,7 +15,7 @@ const OurServices = ({ length }) => {
     setIsOpen(true);
   };
   return (
-    <div className="py-[5rem] bg-[#101010] text-white">
+    <div className="py-[5rem] bg-[#fa4f41] text-white">
       <div
         data-aos="fade-up"
         className="wrapper flex flex-col text-center gap-5 items-center"
@@ -36,7 +36,7 @@ const OurServices = ({ length }) => {
               onClick={() => handleSelectServiceToShowDetail(service)}
               data-aos="fade-up"
               key={service.id}
-              className="rounded-lg p-[1px] bg-gradient-to-r from-secondary to-primary cursor-pointer"
+              className="rounded-lg p-[1px] bg-gradient-to-r from-white to-main cursor-pointer"
             >
               <div className="rounded-lg bg-[#101010] hover:bg-black/70 transition-all duration-300 p-5 flex flex-col justify-between items-start text-start h-full gap-4">
                 <div className="flex flex-col gap-3">

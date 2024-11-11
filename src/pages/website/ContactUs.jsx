@@ -15,7 +15,7 @@ const ContactUs = () => {
       <div className="wrapper py-[5rem] grid lg:grid-cols-[45%_auto] gap-7">
         <div
           data-aos="fade-right"
-          className="bg-gradient-to-r flex flex-col gap-2 text-white from-secondary/30 to-primary/30 p-4 rounded-xl"
+          className=" flex flex-col gap-2 text-white bg-primary p-4 rounded-xl"
         >
           <div className="gradient-rounded-text-box">Contact Us</div>
           <h2 className="heading-2 mt-5">Get in Touch</h2>
@@ -63,7 +63,7 @@ const ContactUs = () => {
           data-aos="fade-left"
           className="h-full flex flex-col justify-between gap-7"
         >
-          <div className="p-[1px] text-white h-full bg-gradient-to-r from-secondary to-primary rounded-lg">
+          <div className="p-[1px] text-white h-full bg-white  rounded-lg">
             <div className="rounded-lg h-full bg-[#101010] p-4">
               <h3 className="text-lg">Have Any Question?</h3>
               <form className="flex flex-col gap-4 mt-5">

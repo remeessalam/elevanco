@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const WebsiteFooter = () => {
   return (
-    <div className="py-14 bg-gradient-to-r from-primary/30 to-secondary/30">
+    <div className="py-14 bg-main border-t border-white">
       <div className="wrapper text-white">
         <div className="flex md:flex-row flex-col justify-between gap-10">
           <div className="flex flex-col items-center">
