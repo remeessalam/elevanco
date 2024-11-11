@@ -5,7 +5,6 @@ import {
   aboutUsGridImg2,
   aboutUsGridImg3,
   aboutUsGridImg4,
-  aboutUsGridImg5,
   whyChooseUsContent,
 } from "../../constant";
 import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
