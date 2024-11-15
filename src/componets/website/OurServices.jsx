@@ -15,12 +15,15 @@ const OurServices = ({ length }) => {
     setIsOpen(true);
   };
   return (
-    <div className="py-[5rem] bg-[#fa4f41] text-white">
+    <div className="py-[5rem] bg-white text-black">
       <div
         data-aos="fade-up"
         className="wrapper flex flex-col text-center gap-5 items-center"
       >
-        <div data-aos="fade-up" className="gradient-rounded-text-box mb-2">
+        <div
+          data-aos="fade-up"
+          className="gradient-rounded-text-box-black mb-2"
+        >
           Our Services
         </div>
         <h2 data-aos="fade-up" className="heading-2 max-w-[50rem]">
@@ -40,14 +43,14 @@ const OurServices = ({ length }) => {
             >
               <div className="rounded-lg bg-[#101010] hover:bg-black/70 transition-all duration-300 p-5 flex flex-col justify-between items-start text-start h-full gap-4">
                 <div className="flex flex-col gap-3">
-                  <h5 className="font-semibold text-xl font-raleway">
+                  <h5 className="font-semibold text-white text-xl font-raleway">
                     {service.title}
                   </h5>
                   <p className="desc text-white/80">{service.desc}</p>
                 </div>
                 <button
                   onClick={() => handleSelectServiceToShowDetail(service)}
-                  className="desc mt-1 flex items-center gap-3 hover:text-primary transition-all duration-300"
+                  className="desc mt-1 flex items-center gap-3 text-white hover:text-primary transition-all duration-300"
                 >
                   Learn More <PiCaretDoubleRightBold />
                 </button>

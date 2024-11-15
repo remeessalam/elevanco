@@ -90,7 +90,7 @@ const WhyChooseUs = () => {
                   <h5 className="text-xl">Customized Solutions</h5>
                   <img
                     src={whyChooseUsIcon1}
-                    className="h-[3rem] object-contain mb-3"
+                    className="h-[3rem] object-contain mb-3 opacity-55"
                     alt=""
                   />
                 </div>
@@ -108,7 +108,7 @@ const WhyChooseUs = () => {
                   <h5 className="text-xl">Collaborative Process</h5>
                   <img
                     src={whyChooseUsIcon2}
-                    className="h-[3rem] object-contain mb-3"
+                    className="h-[3rem] object-contain mb-3 opacity-55"
                     alt=""
                   />
                 </div>
@@ -122,7 +122,7 @@ const WhyChooseUs = () => {
             <div data-aos="fade-up" className="w-full lg:block hidden">
               <img
                 src={whyChooseUsPng}
-                className="object-contain max-h-[25rem] mx-auto"
+                className="object-contain max-h-[25rem] mx-auto opacity-55"
                 alt="why choose us"
               />
             </div>
@@ -135,7 +135,7 @@ const WhyChooseUs = () => {
                   <h5 className="text-xl">Quality Assurance</h5>
                   <img
                     src={whyChooseUsIcon3}
-                    className="h-[3rem] object-contain mb-3"
+                    className="h-[3rem] object-contain mb-3 opacity-55"
                     alt=""
                   />
                 </div>
@@ -153,7 +153,7 @@ const WhyChooseUs = () => {
                   <h5 className="text-xl">Future-Ready Technology</h5>
                   <img
                     src={whyChooseUsIcon4}
-                    className="h-[3rem] object-contain mb-3"
+                    className="h-[3rem] object-contain mb-3 opacity-55"
                     alt=""
                   />
                 </div>
