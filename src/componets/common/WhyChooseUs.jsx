@@ -122,7 +122,7 @@ const WhyChooseUs = () => {
             <div data-aos="fade-up" className="w-full lg:block hidden">
               <img
                 src={whyChooseUsPng}
-                className="object-contain max-h-[25rem] mx-auto opacity-85"
+                className="object-contain max-h-[25rem] mx-auto opacity-95"
                 alt="why choose us"
               />
             </div>
