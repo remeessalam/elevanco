@@ -36,6 +36,14 @@ const Contact = () => {
               />
             </div>
             <div className="">
+              <input
+                required
+                className="w-full bg-transparent outline-none border rounded-sm font-light border-primary px-2 py-3"
+                type="number"
+                placeholder="Mobile"
+              />
+            </div>
+            <div className="">
               <textarea
                 className="w-full bg-transparent outline-none border rounded-sm font-light border-primary px-2 py-3"
                 rows="4"
