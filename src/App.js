@@ -12,6 +12,7 @@ import { LoadingSpinner } from "./componets/common/LoadingSpinner";
 import SpinnerContextProvider, {
   LoadingSpinnerContext,
 } from "./componets/SpinnerContext";
+import ScrollToTop from "./componets/website/ScrollToTop";
 
 AOS.init({
   once: true,
@@ -22,6 +23,8 @@ export default function App() {
     <SpinnerContextProvider>
       <LoadingSpinnerContext />
       <Suspense fallback={<LoadingSpinner />}>
+        <ScrollToTop />
+
         <Routes>
           {/* Website Pages */}
           {routes.map(({ component, name, path }, index) => (
