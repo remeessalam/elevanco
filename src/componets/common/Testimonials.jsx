@@ -125,7 +125,7 @@ const Testimonials = () => {
                   <img
                     src={item.profileImg}
                     alt={item.name}
-                    className="h-full w-[2rem] rounded-full object-cover"
+                    className="h-[2rem] w-[2rem] rounded-full object-cover"
                   />
                   <div className="flex flex-col h-full">
                     <p className="font-medium">{item.name}</p>
@@ -138,7 +138,8 @@ const Testimonials = () => {
         </div>
 
         <div
-          data-aos="fade-up"
+          // data-aos="fade-up"
+          // data-aos-offset={-200}
           className="flex justify-center items-center gap-10 mt-2"
         >
           <button
