@@ -145,7 +145,7 @@ export {
 export const companyDetails = {
   phone: "+91-7388885517",
   whatsapp: "+91-7388885517",
-  email: "example@domainname.com",
+  email: "connect@elevanco.com",
   address: "Flat 345, DDA Flats Pocket 2, Sector 9, Dwarka 110077",
 };
 
