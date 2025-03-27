@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 // import line from "../../assets/images/line.png";
 import toast from "react-hot-toast";
@@ -8,7 +8,9 @@ import { companyDetails } from "../../constant";
 //  "../../assets/images/line.png";
 
 const Form = () => {
-  //   const { setSpinner } = useContext(SpinnerContext);
+  const [spinner, setSpinner] = useState(false);
+
+  // const { setSpinner } = useContext(SpinnerContext);
   const {
     register,
     handleSubmit,
@@ -27,7 +29,9 @@ const Form = () => {
 
   // handle form submit click
   const handleFormSubmit = async (values) => {
-    // setSpinner(true);
+    if (spinner) return;
+
+    setSpinner(true);
 
     var emailBody = "Name: " + values.name + "\n\n";
     emailBody += "Email: " + values.email + "\n\n";
@@ -38,7 +42,7 @@ const Form = () => {
     // Construct the request payload
     var payload = {
       to: companyDetails.email,
-      subject: "You have a new message from NEXTGENAI",
+      subject: "You have a new message from Elvanco",
       body: emailBody,
     };
 
@@ -58,7 +62,7 @@ const Form = () => {
         toast.error(error.message);
       })
       .finally(() => "");
-    // setSpinner(false));
+    setSpinner(false);
   };
   return (
     <div className="mt-20 mb-32">
@@ -83,7 +87,7 @@ const Form = () => {
               </p>
             </div>
             <form
-              //   onSubmit={handleSubmit(handleFormSubmit)}
+              onSubmit={handleSubmit(handleFormSubmit)}
               data-aos="fade-up"
               className="flex flex-col gap-1"
             >
@@ -204,10 +208,10 @@ const Form = () => {
               </div>
               <button
                 disabled={isSubmitting}
-                // type="submit"
+                type="submit"
                 className="primary-btn mt-3 hover:text-black"
               >
-                Send Message
+                {spinner ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>

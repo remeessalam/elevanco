@@ -1,4 +1,4 @@
-import React, { lazy } from "react";
+import React, { lazy, useState } from "react";
 import Banner from "../../componets/website/Banner";
 import { Link } from "react-router-dom";
 import { FaPhone } from "react-icons/fa";
@@ -6,9 +6,57 @@ import { companyDetails } from "../../constant";
 import { IoMail } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsFacebook, BsLinkedin, BsTwitter, BsYoutube } from "react-icons/bs";
+import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 const MapComponent = lazy(() => import("../../componets/website/MapComponent"));
 
 const ContactUs = () => {
+  const [spinner, setSpinner] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = async (values) => {
+    if (spinner) return;
+    setSpinner(true);
+
+    var emailBody = "Name: " + values.name + "\n\n";
+    emailBody += "Email: " + values.email + "\n\n";
+    emailBody += "Phone: " + values.phone + "\n\n";
+    // emailBody += "Subject: " + values.subject + "\n\n";
+    emailBody += "Message:\n" + values.message;
+
+    // Construct the request payload
+    var payload = {
+      to: companyDetails.email,
+      subject: "You have a new message from Elevanco",
+      body: emailBody,
+    };
+
+    await fetch("https://smtp-api-tawny.vercel.app/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        toast.success("Email sent successfully");
+        reset();
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      })
+      .finally(() => "");
+    setSpinner(false);
+    // };
+  };
+
   return (
     <>
       <Banner page="Contact Us" />
@@ -78,39 +126,73 @@ const ContactUs = () => {
           <div className="p-[1px] text-white h-full bg-white  rounded-lg">
             <div className="rounded-lg h-full bg-[#101010] p-4">
               <h3 className="text-lg">Have Any Question?</h3>
-              <form className="flex flex-col gap-4 mt-5">
+              <form
+                onSubmit={handleSubmit(onSubmit)}
+                className="flex flex-col gap-4 mt-5"
+              >
                 <div className="flex flex-col gap-1">
                   <input
+                    {...register("name", { required: true })}
                     type="text"
                     className="border-primary p-2 rounded-md border outline-none bg-transparent"
                     placeholder="Name"
                   />
+                  {errors.name && (
+                    <span className="text-red-500">Name is required</span>
+                  )}
                 </div>
+
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="flex flex-col gap-1">
                     <input
+                      {...register("email", {
+                        required: true,
+                        pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                      })}
                       type="email"
                       className="border-primary p-2 rounded-md border outline-none bg-transparent"
                       placeholder="Email"
                     />
+                    {errors.email && (
+                      <span className="text-red-500">
+                        Valid Email is required
+                      </span>
+                    )}
                   </div>
+
                   <div className="flex flex-col gap-1">
                     <input
+                      {...register("phone", {
+                        required: true,
+                        minLength: 10,
+                        maxLength: 10,
+                      })}
                       type="tel"
                       className="border-primary p-2 rounded-md border outline-none bg-transparent"
                       placeholder="Phone Number"
                     />
+                    {errors.phone && (
+                      <span className="text-red-500">
+                        Valid Phone Number is required
+                      </span>
+                    )}
                   </div>
                 </div>
+
                 <div className="flex flex-col gap-1">
                   <textarea
+                    {...register("message", { required: true })}
                     rows="4"
                     className="border-primary p-2 rounded-md border outline-none bg-transparent"
                     placeholder="Message"
                   />
+                  {errors.message && (
+                    <span className="text-red-500">Message is required</span>
+                  )}
                 </div>
-                <button type="button" className="tertiary-btn mt-3">
-                  Send Message
+
+                <button type="submit" className="tertiary-btn mt-3">
+                  {spinner ? "Sending..." : "Send Message"}
                 </button>
               </form>
             </div>

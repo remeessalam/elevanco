@@ -146,7 +146,8 @@ export const companyDetails = {
   phone: "+91-7388885517",
   phone2: "+1 (437) 322-9612",
   whatsapp: "+91-7388885517",
-  email: "connect@elevanco.com",
+  // email: "connect@elevanco.com",
+  email: "remeesreme4u@gmail.com",
   address:
     "Flat 345, DDA Flats Pocket 2, Sector 9, Dwarka 110077 New Delhi, India",
   officeaddress: "51 Lower Simcoe St, Toronto, ON M5J 3A2, Canada",
