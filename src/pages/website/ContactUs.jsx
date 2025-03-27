@@ -35,6 +35,7 @@ const ContactUs = () => {
             <div className="flex flex-col h-full">
               <p className="font-medium">Call Us</p>
               <p className="desc">{companyDetails.phone}</p>
+              <p className="desc">{companyDetails.phone2}</p>
             </div>
           </Link>
           <Link
@@ -54,7 +55,18 @@ const ContactUs = () => {
               <FaLocationDot className="text-2xl scale-x-[-1]" />
             </div>
             <div className="flex flex-col h-full">
-              <p className="font-medium">Location</p>
+              <p className="font-medium">Office Address</p>
+              <p className="desc max-w-[20rem]">
+                {companyDetails.officeaddress}
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start gap-3 w-fit mt-5">
+            <div className="min-w-[2.5rem] w-[2.5rem] h-[2.5rem] rounded-full bg-primary flex justify-center items-center">
+              <FaLocationDot className="text-2xl scale-x-[-1]" />
+            </div>
+            <div className="flex flex-col h-full">
+              <p className="font-medium">Registered Address</p>
               <p className="desc max-w-[20rem]">{companyDetails.address}</p>
             </div>
           </div>
