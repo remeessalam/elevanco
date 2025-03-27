@@ -307,6 +307,13 @@ export const allServices = [
     detailContent:
       "In today’s data-driven world, smart solutions can give you a competitive edge. Our AI services use advanced artificial intelligence to transform raw data into actionable insights, improving decision-making and driving efficiency. We offer solutions ranging from predictive analytics and recommendation systems to natural language processing and computer vision. With our AI-powered tools, we help you optimize business processes, enhance customer experiences, and make better-informed decisions that fuel growth.",
   },
+  {
+    id: 6,
+    title: "Digital Marketing",
+    desc: "Our digital marketing services are crafted to elevate your brand's visibility, engage your audience, and drive impactful results. From SEO and content marketing to social media management and PPC campaigns, we create data-driven strategies tailored to your business goals. Partner with us to enhance your online presence, generate high-quality leads, and achieve sustainable growth.",
+    detailContent:
+      "In today's competitive digital landscape, a strong online presence is essential. Our digital marketing services are designed to amplify your brand’s reach, engage your target audience, and drive measurable results. From SEO and content marketing to social media strategy and PPC campaigns, we deliver customized solutions that align with your business goals. With data-driven insights and creative strategies, we help you optimize your marketing efforts, increase visibility, and generate high-quality leads. Elevanco is your partner in building a digital presence that not only stands out but also delivers growth.",
+  },
 ];
 
 // about us page why choose content

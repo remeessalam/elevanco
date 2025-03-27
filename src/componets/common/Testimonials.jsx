@@ -4,6 +4,7 @@ import profileImg1 from "../../assets/images/profileimg-1.png";
 import profileImg2 from "../../assets/images/profileimg-2.png";
 import profileImg3 from "../../assets/images/profileimg-4.jpg";
 import profileImg4 from "../../assets/images/profileimg-5.jpg";
+import profileImg5 from "../../assets/images/profileimg-3.png";
 import {
   IoArrowBackCircleOutline,
   IoArrowForwardCircleOutline,
@@ -25,18 +26,25 @@ const reviews = [
     desc: "“We knew our app needed a complete overhaul in terms of user interface and experience, and Product Managerat delivered on every front. The design team’s approach was highly collaborative, and they paid close attention to the look and feel we wanted. They developed wireframes and prototypes that captured our vision and made it even better, with innovative touches we hadn’t even considered. The end result? A beautiful, intuitive interface that our users find easy to navigate and love using. We’ve seen a measurable increase in user satisfaction, and I truly believe it’s due to the team’s attention to every little detail. Brilliant work all around!”",
   },
   {
-    id: 2,
+    id: 3,
     profileImg: profileImg4,
     name: "Sarah T",
     role: "Operations Director at  BrightTech Innovations",
     desc: "“We partnered with BrightTech Innovations to streamline some of our most repetitive and time-consuming processes, and it’s been a game-changer. Their RPA team quickly identified automation opportunities within our workflows and customized solutions to fit our exact needs. We’re now saving hours of manual work each week, and the accuracy improvements have been outstanding. Not only has the automation increased our efficiency, but it’s also allowed our team to focus on more strategic projects, which has boosted our overall productivity. BrightTech Innovations exceeded our expectations with their expertise and commitment to quality.”",
   },
   {
-    id: 2,
+    id: 4,
     profileImg: profileImg3,
     name: "Ryan M",
     role: "CEO at Alpha Digital Solutions",
     desc: "“From day one, the game development team at Alpha Digital Solutions was dedicated to bringing our vision to life. They were just as excited about the project as we were, and it showed in every interaction. Their creative insights and technical know-how made the entire development process smooth and enjoyable. The final product is an engaging, beautifully designed game that has been a hit with our audience. We’ve received so much positive feedback on the graphics and gameplay. This team truly understands what it takes to create a successful game, and I wouldn’t hesitate to work with them again on future projects!”",
+  },
+  {
+    id: 5,
+    profileImg: profileImg5,
+    name: "Emily W",
+    role: "CEO at Alpha Digital Solutions",
+    desc: "“Working with Elevanco transformed our online presence. Their tailored strategies and expertise in SEO, social media, and paid ads led to a significant boost in traffic, engagement, and conversions. Transparent, collaborative, and results-driven, they exceeded our expectations. Highly recommend!”",
   },
 ];
 
