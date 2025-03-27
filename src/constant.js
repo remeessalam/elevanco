@@ -144,7 +144,7 @@ export {
 // company details
 export const companyDetails = {
   phone: "+91-7388885517",
-  phone2: "1 (437) 322-9612",
+  phone2: "+1 (437) 322-9612",
   whatsapp: "+91-7388885517",
   email: "connect@elevanco.com",
   address:
