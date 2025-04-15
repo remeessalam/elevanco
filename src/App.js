@@ -19,6 +19,8 @@ AOS.init({
   duration: 500,
 });
 export default function App() {
+  //refresh
+
   return (
     <SpinnerContextProvider>
       <LoadingSpinnerContext />
